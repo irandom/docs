@@ -259,8 +259,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:233|Editor:333|"[Anonymous]"%.}{ %Title|ShortTitle%{. %Edition:o% ed.}{. Vol %Volume%.}{ / Ed. by %BookAuthor:233%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages:P. :pp. %}.</format>
-          <format lcid="1049">{%Author:249|Editor:349|"[Аноним]"%.}{ %Title|ShortTitle%{. %Edition%-е изд.}{. Т. %Volume%.}{ / ред. %BookAuthor:249%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ С. %Pages%}.</format>
+          <format lcid="1033">{%Author:233|Editor:333|"[Anonymous]"%.}{ %Title|ShortTitle%{. %Edition:o% ed.}{. Vol %Volume%.}{ // In: %BookTitle%}{ / Ed. by %BookAuthor:233%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages:P. :pp. %}.</format>
+          <format lcid="1049">{%Author:249|Editor:349|"[Аноним]"%.}{ %Title|ShortTitle%{. %Edition%-е изд.}{. Т. %Volume%.}{ // В: %BookTitle%}{ / ред. %BookAuthor:249%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ С. %Pages%}.</format>
         </column>
       </source>
       <source type="JournalArticle"><!-- what's the difference between this and ArticleInAPeriodial? Use the former. -->
@@ -384,6 +384,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
+<!--      <format lcid="1033">{%Author:133%, }{%Title%}{,{ %Month:s%{ %Day%,}} %Year%}{, %Comments%}.</format>
+          <format lcid="1049">{%Author:149%, }{%Title%}{,{ %Month:s%{ %Day%,}} %Year%}{, %Comments%}.</format> -->
           <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%.{ %Edition:o% ed.}{ Vol %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% pp.}{ %Comments%.}</format>
           <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%.{ %Edition%-е изд.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% с.}{ %Comments%.}</format>
         </column>
