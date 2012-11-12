@@ -314,8 +314,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:133%, }{"%Title%," }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}</format>
-          <format lcid="1049">{%Author:149%, }{"%Title%," }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}</format>
+          <format lcid="1033">{%Author:133%, }{"%Title%," }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}{ %Pages% pp.}</format>
+          <format lcid="1049">{%Author:149%, }{"%Title%," }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}{ %Pages% с.}</format>
         </column>
         <sortkey></sortkey>
       </source>
