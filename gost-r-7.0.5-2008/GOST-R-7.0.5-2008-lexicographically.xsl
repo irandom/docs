@@ -34,7 +34,7 @@
   <!-- Variable containing all necessary data for a certain style of bibliography. -->
   <xsl:variable name="data">
     <general>
-      <stylename>ГОСТ Р 7.0.5-2008 (сортировка по порядку включения)</stylename>
+      <stylename>ГОСТ Р 7.0.5-2008 (сортировка по именам)</stylename>
       <version>2012.03.05</version>
       <author>Андрей Рогожников (rogozhnikov.andrey@gmail.com)</author>
       <description>Реализация стиля библиографии, определяемого ГОСТом Р 7.0.5-2008</description>
@@ -169,43 +169,43 @@
         <format>[%Tag%]</format>
       </source>
       <source type="Book">
-        <format>{%CitationPrefix%}%RefOrder%{, vol. %CitationVolume%}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}%BibOrder%{, vol. %CitationVolume%}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
       </source>
       <source type="BookSection">
-        <format>{%RefOrder%}</format>
+        <format>{%BibOrder%}</format>
       </source>
       <source type="JournalArticle">
-        <format>{%CitationPrefix%}%RefOrder%{, vol. %CitationVolume%}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}%BibOrder%{, vol. %CitationVolume%}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
       </source>
       <source type="ArticleInAPeriodical">
-        <format>{%RefOrder%}</format>
+        <format>{%BibOrder%}</format>
       </source>
       <source type="ConferenceProceedings">
-        <format>{%RefOrder%}</format>
+        <format>{%BibOrder%}</format>
       </source>
       <source type="Report">
-        <format>{%RefOrder%}</format>
+        <format>{%BibOrder%}</format>
       </source>
       <source type="InternetSite">
-        <format>{%RefOrder%}</format>
+        <format>{%BibOrder%}</format>
       </source>
       <source type="DocumentFromInternetSite">
-        <format>{%RefOrder%}</format>
+        <format>{%BibOrder%}</format>
       </source>
       <source type="ElectronicSource">
-        <format>{%RefOrder%}</format>
+        <format>{%BibOrder%}</format>
       </source>
       <source type="Patent">
-        <format>{%RefOrder%}</format>
+        <format>{%BibOrder%}</format>
       </source>
       <source type="Misc">
-        <format>{%RefOrder%}</format>
+        <format>{%BibOrder%}</format>
       </source>
       <source type="Standard">
-        <format>{%RefOrder%}</format>
+        <format>{%BibOrder%}</format>
       </source>
       <source type="Thesis">
-        <format>{%RefOrder%}</format>
+        <format>{%BibOrder%}</format>
       </source>
     </citation>
     <footnotecitation>
@@ -228,7 +228,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="">%RefOrder%</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -241,7 +241,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -249,12 +249,13 @@
           <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%.{ %Edition:o% ed.}{ Vol %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% pp.}</format>
           <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%.{ %Edition%-е изд.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% с.}</format>
         </column>
+		<sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="BookSection"><!-- ok -->
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -262,12 +263,13 @@
           <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%{. %Edition:o% ed.}{. Vol %Volume%.}{ // In: %BookTitle%}{ / Ed. by %BookAuthor:233%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages:P. :pp. %}.</format>
           <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%{. %Edition%-е изд.}{. Т. %Volume%.}{ // В кн.: %BookTitle%}{ / ред. %BookAuthor:249%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ С. %Pages%}.</format>
         </column>
+		<sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="JournalArticle"><!-- what's the difference between this and ArticleInAPeriodial? Use the former. -->
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -275,13 +277,13 @@
           <format lcid="1033">{%Author:233%, }{"%Title%,"}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, Vol. %Volume%}{, No. %Issue%}{,{ %Month:s%} %Year%}{ . %Pages:P. :pp. %}.</format>
           <format lcid="1049">{%Author:249%, }{"%Title%,"}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, Т. %Volume%}{, № %Issue%}{,{ %Month:s%} %Year%}{ . С. %Pages%}.</format>
         </column>
-        <sortkey></sortkey>
+		<sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="ArticleInAPeriodical"><!-- ok -->
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -289,13 +291,13 @@
           <format lcid="1033">{%Author:233%.}{ %Title%}{ // %PeriodicalTitle%.}{{ %Month:s%} %Year%.}{ Vol. %Volume%.}{ No. %Issue%.}{ %Pages:P. :pp. %.}</format>
           <format lcid="1049">{%Author:249%.}{ %Title%}{ // %PeriodicalTitle%.}{{ %Month:s%} %Year%.}{ Т. %Volume%.}{ № %Issue%.}{ С. %Pages%.}</format>
         </column>
-        <sortkey></sortkey>
+		<sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="ConferenceProceedings"><!-- ok -->
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -303,13 +305,13 @@
           <format lcid="1033">{%Author:233%.}{ %Title%}{ // %ConferenceName%.}{ %City|StateProvince|CountryRegion%.}{ %StateProvince|CountryRegion%.}{ %CountryRegion%.}{{ %Month:s%} %Year%.}{ Vol. %Volume%.}{ %Pages:P. :pp. %.}.</format>
           <format lcid="1049">{%Author:249%.}{ %Title%}{ // %ConferenceName%.}{ %City|StateProvince|CountryRegion%.}{ %StateProvince|CountryRegion%.}{ %CountryRegion%.}{{ %Month:s%} %Year%.}{ Т. %Volume%.}{ С. %Pages%.}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="Report"><!-- not implemented -->
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -317,13 +319,13 @@
           <format lcid="1033">{%Author:133%, }{"%Title%," }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}{ %Pages% pp.}</format>
           <format lcid="1049">{%Author:149%, }{"%Title%," }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}{ %Pages% с.}</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="InternetSite"><!-- ok -->
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -331,13 +333,13 @@
           <format lcid="1033">{%Author:249%.}{ %Title% [Электронный ресурс]}{ // %InternetSiteTitle%: [сайт].}{ [%Year%].}{ URL: %URL:0s%}{ (дата обращения: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
           <format lcid="1049">{%Author:249%.}{ %Title% [Электронный ресурс]}{ // %InternetSiteTitle%: [сайт].}{ [%Year%].}{ URL: %URL:0s%}{ (дата обращения: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="DocumentFromInternetSite"><!-- ok -->
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -345,13 +347,13 @@
            <format lcid="1033">{%Author:249%.}{ %Title%}{ // %InternetSiteTitle%.}{ %Year%.}{ URL: %URL:0s%}{ (дата обращения: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
            <format lcid="1049">{%Author:249%.}{ %Title%}{ // %InternetSiteTitle%.}{ %Year%.}{ URL: %URL:0s%}{ (дата обращения: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="ElectronicSource"><!-- ok, но один случай с 18-й страницы стандарта нельзя сделать при помощи source type-ов OOXML -->
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -359,13 +361,13 @@
           <format lcid="1033">{%Author:249%.}{ %Title%.}{ %City%:}{ %Publisher%,}{ %Year%.}{ %Medium%.}</format>
           <format lcid="1049">{%Author:249%.}{ %Title%.}{ %City%:}{ %Publisher%,}{ %Year%.}{ %Medium%.}</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="Patent"><!-- not implemented -->
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -373,13 +375,13 @@
           <format lcid="1033">{%Inventor:133|Author:133%, }{"%Title%,"}{ %Type%}{ %PatentNumber%}{,{ %Month:s%{ %Day%,}} %Year%}.</format>
           <format lcid="1049">{%Inventor:149|Author:149%, }{"%Title%,"}{ %Type%}{ %PatentNumber%}{,{ %Month:s%{ %Day%,}} %Year%}.</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="Misc">
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -389,13 +391,13 @@
           <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%.{ %Edition:o% ed.}{ Vol %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% pp.}{ %Comments%.}</format>
           <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%.{ %Edition%-е изд.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% с.}{ %Comments%.}</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="Standard"><!-- not implemented -->
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -403,13 +405,13 @@
           <format lcid="1033">{%Author:133%, }{"%Title%," }{%Institution%, }{%ThesisType% }{%StandardNumber%}{,{ %Month:s%} %Year%}.{ [Online]. %URL:l%}</format>
           <format lcid="1049">{%Author:149%, }{"%Title%," }{%Institution%, }{%ThesisType% }{%StandardNumber%}{,{ %Month:s%} %Year%}.{ [Online]. %URL:l%}</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
       <source type="Thesis"><!-- not implemented -->
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">{%RefOrder%.}</format>
+          <format lcid="">%BibOrder%</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -417,7 +419,7 @@
           <format lcid="1033">{%Author:133%, }{"%Title%," }{%ThesisType%, }{%Institution%, }{%City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{, %Year%}.{ [Online]. %URL:l%}</format>
           <format lcid="1049">{%Author:149%, }{"%Title%," }{%ThesisType%, }{%Institution%, }{%City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{, %Year%}.{ [Online]. %URL:l%}</format>
         </column>
-        <sortkey></sortkey>
+        <sortkey>{%Author:233|Editor:333%}{%Title%}{%Year%}</sortkey>
       </source>
     </bibliography>
     <namelists>
