@@ -578,6 +578,16 @@
   <xsl:template match="/">
 
     <xsl:choose>
+      <!-- Sets a dummy version number. -->
+      <xsl:when test="b:XslVersion">
+        <xsl:text>10</xsl:text>
+      </xsl:when>
+
+      <!-- We do not do localization, just use the default name. -->
+      <xsl:when test="b:StyleNameLocalized">
+        <xsl:value-of select="msxsl:node-set($data)/general/stylename"/>
+      </xsl:when> 
+      
       <!-- Gets the name of the style as it will be displayed in Word 2007. -->
       <xsl:when test="b:StyleName">
         <xsl:value-of select="msxsl:node-set($data)/general/stylename"/>
