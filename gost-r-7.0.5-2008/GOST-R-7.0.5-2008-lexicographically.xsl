@@ -121,6 +121,7 @@
       </source>
       <source type="DocumentFromInternetSite">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:InternetSiteTitle</b:ImportantField>
         <b:ImportantField>b:YearAccessed</b:ImportantField>
         <b:ImportantField>b:MonthAccessed</b:ImportantField>
