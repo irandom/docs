@@ -242,7 +242,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -256,7 +256,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -270,7 +270,7 @@
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -284,7 +284,7 @@
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -298,7 +298,7 @@
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -312,7 +312,7 @@
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -326,7 +326,7 @@
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -340,7 +340,7 @@
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -354,7 +354,7 @@
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -368,7 +368,7 @@
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -382,7 +382,7 @@
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -398,7 +398,7 @@
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
@@ -412,7 +412,7 @@
         <column id="1">
           <halign>center</halign>
           <valign>top</valign>
-          <format lcid="">%BibOrder%</format>
+          <format lcid="">{%BibOrder%.}</format>
         </column>
         <column id="2">
           <halign>left</halign>
