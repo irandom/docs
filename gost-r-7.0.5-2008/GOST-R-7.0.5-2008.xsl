@@ -273,8 +273,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:233%, }{%Title%,}{ // %JournalName%}{, Vol. %Volume%}{, No. %Issue%}{,{ %Month:s%} %Year%}{ . %Pages:P. :pp. %}.</format>
-          <format lcid="1049">{%Author:249%, }{%Title%,}{ // %JournalName%}{, Т. %Volume%}{, № %Issue%}{,{ %Month:s%} %Year%}{ . С. %Pages%}.</format>
+          <format lcid="1033">{%Author:233%. }{%Title%}{ // %JournalName%}{, Vol. %Volume%}{, No. %Issue%}{,{ %Month:s%} %Year%}{ . %Pages:P. :pp. %}.</format>
+          <format lcid="1049">{%Author:249%. }{%Title%}{ // %JournalName%}{, Т. %Volume%}{, № %Issue%}{,{ %Month:s%} %Year%}{ . С. %Pages%}.</format>
         </column>
         <sortkey></sortkey>
       </source>
