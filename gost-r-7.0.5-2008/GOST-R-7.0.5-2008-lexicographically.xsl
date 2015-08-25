@@ -112,6 +112,7 @@
         <b:ImportantField>b:Year</b:ImportantField>
       </source>
       <source type="InternetSite">
+        <b:ImportantField>b:Title</b:ImportantField>
         <b:ImportantField>b:InternetSiteTitle</b:ImportantField>
         <b:ImportantField>b:YearAccessed</b:ImportantField>
         <b:ImportantField>b:MonthAccessed</b:ImportantField>
