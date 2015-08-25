@@ -162,7 +162,7 @@
     <citation>
       <openbracket>[</openbracket>
       <closebracket>]</closebracket>
-      <separator>,</separator>
+      <separator>, </separator>
       <noauthor>-Artist-Author-BookAuthor-Compiler-Composer-Conductor-Counsel-Director-Editor-Interviewee-Interviewer-Inventor-Performer-ProducerName-Translator-Writer-</noauthor>
       <notitle>-Title-AlbumTitle-BookTitle-BroadcastTitle-InternetSiteTitle-PeriodicalTitle-PublicationTitle-ShortTitle-</notitle>
       <noyear>-Year-YearAccessed-"n.d."-</noyear>
@@ -212,7 +212,7 @@
     <footnotecitation>
       <openbracket>[</openbracket>
       <closebracket>]</closebracket>
-      <separator>,</separator>
+      <separator>, </separator>
       <noauthor>-Artist-Author-BookAuthor-Compiler-Composer-Conductor-Counsel-Director-Editor-Interviewee-Interviewer-Inventor-Performer-ProducerName-Translator-Writer-</noauthor>
       <notitle>-Title-AlbumTitle-BookTitle-BroadcastTitle-InternetSiteTitle-PeriodicalTitle-PublicationTitle-ShortTitle-</notitle>
       <noyear>-Year-YearAccessed-"n.d."-</noyear>
@@ -315,8 +315,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:133%. }{%Title%, }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}{ %Pages% pp.}</format>
-          <format lcid="1049">{%Author:149%. }{%Title%, }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}{ %Pages% с.}</format>
+          <format lcid="1033">{%Author:233%, }{%Title%, }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}{ %Pages% pp.}</format>
+          <format lcid="1049">{%Author:249%, }{%Title%, }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}{ %Pages% с.}</format>
         </column>
         <sortkey></sortkey>
       </source>
@@ -401,8 +401,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:133%. }{%Title%, }{%Institution%, }{%ThesisType% }{%StandardNumber%}{,{ %Month:s%} %Year%}.{ [Online]. %URL:l%}</format>
-          <format lcid="1049">{%Author:149%. }{%Title%, }{%Institution%, }{%ThesisType% }{%StandardNumber%}{,{ %Month:s%} %Year%}.{ [Online]. %URL:l%}</format>
+          <format lcid="1033">{%Author:133%, }{%Title%, }{%Institution%, }{%ThesisType% }{%StandardNumber%}{,{ %Month:s%} %Year%}.{ [Online]. %URL:l%}</format>
+          <format lcid="1049">{%Author:149%, }{%Title%, }{%Institution%, }{%ThesisType% }{%StandardNumber%}{,{ %Month:s%} %Year%}.{ [Online]. %URL:l%}</format>
         </column>
         <sortkey></sortkey>
       </source>
@@ -415,8 +415,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:133%. }{%Title%, }{%ThesisType%, }{%Institution%, }{%City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{, %Year%}.{ [Online]. %URL:l%}</format>
-          <format lcid="1049">{%Author:149%. }{%Title%, }{%ThesisType%, }{%Institution%, }{%City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{, %Year%}.{ [Online]. %URL:l%}</format>
+          <format lcid="1033">{%Author:133%, }{%Title%, }{%ThesisType%, }{%Institution%, }{%City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{, %Year%}.{ [Online]. %URL:l%}</format>
+          <format lcid="1049">{%Author:149%, }{%Title%, }{%ThesisType%, }{%Institution%, }{%City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{, %Year%}.{ [Online]. %URL:l%}</format>
         </column>
         <sortkey></sortkey>
       </source>
@@ -443,9 +443,9 @@
         <corporate>{%Corporate%}</corporate>
         <first_person>{%Last|First%}{ %First:a%}{%Middle:a%}</first_person>
         <other_persons>{%Last|First%}{ %First:a%}{%Middle:a%}</other_persons>
-        <separator_between_if_two> and </separator_between_if_two>
+        <separator_between_if_two>, </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last>, and </separator_before_last>
+        <separator_before_last>, </separator_before_last>
         <max_number_of_persons_to_display>2</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
         <overflow> et al.</overflow>
@@ -458,9 +458,9 @@
         <corporate>{%Corporate%}</corporate>
         <first_person>{%Last|First%}{ %First:a%}{%Middle:a%}</first_person>
         <other_persons>{%Last|First%}{ %First:a%}{%Middle:a%}</other_persons>
-        <separator_between_if_two> и </separator_between_if_two>
+        <separator_between_if_two>, </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last> и </separator_before_last>
+        <separator_before_last>, </separator_before_last>
         <max_number_of_persons_to_display>2</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
         <overflow> и др.</overflow>
@@ -475,7 +475,7 @@
         <other_persons>{%Last|First%}{ %First:apu%}{%Middle:apu%}</other_persons>
         <separator_between_if_two>, </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last>, and </separator_before_last>
+        <separator_before_last>, </separator_before_last>
         <max_number_of_persons_to_display>12</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>10</number_of_persons_to_display_if_more_than_max>
         <overflow>, et al.</overflow>
