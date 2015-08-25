@@ -429,9 +429,9 @@
         <corporate>{%Corporate%}</corporate>
         <first_person>{%Last|First%}</first_person>
         <other_persons>{%Last|First%}</other_persons>
-        <separator_between_if_two> </separator_between_if_two>
-        <separator_between_if_more_than_two> </separator_between_if_more_than_two>
-        <separator_before_last> </separator_before_last>
+        <separator_between_if_two>, </separator_between_if_two>
+        <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
+        <separator_before_last>, </separator_before_last>
         <max_number_of_persons_to_display>500</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>500</number_of_persons_to_display_if_more_than_max>
         <overflow></overflow>
@@ -444,9 +444,9 @@
         <corporate>{%Corporate%}</corporate>
         <first_person>{%Last|First%}{ %First:a%}{%Middle:a%}</first_person>
         <other_persons>{%Last|First%}{ %First:a%}{%Middle:a%}</other_persons>
-        <separator_between_if_two> and </separator_between_if_two>
+        <separator_between_if_two>, </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last>, and </separator_before_last>
+        <separator_before_last>, </separator_before_last>
         <max_number_of_persons_to_display>2</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
         <overflow> et al.</overflow>
@@ -459,9 +459,9 @@
         <corporate>{%Corporate%}</corporate>
         <first_person>{%Last|First%}{ %First:a%}{%Middle:a%}</first_person>
         <other_persons>{%Last|First%}{ %First:a%}{%Middle:a%}</other_persons>
-        <separator_between_if_two> и </separator_between_if_two>
+        <separator_between_if_two>, </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last> и </separator_before_last>
+        <separator_before_last>, </separator_before_last>
         <max_number_of_persons_to_display>2</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
         <overflow> и др.</overflow>
@@ -476,7 +476,7 @@
         <other_persons>{%Last|First%}{ %First:apu%}{%Middle:apu%}</other_persons>
         <separator_between_if_two>, </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last>, and </separator_before_last>
+        <separator_before_last>, </separator_before_last>
         <max_number_of_persons_to_display>12</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>10</number_of_persons_to_display_if_more_than_max>
         <overflow>, et al.</overflow>
