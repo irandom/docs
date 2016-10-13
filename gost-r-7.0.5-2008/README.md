@@ -6,7 +6,7 @@
 
 ## Поддержка
 
-На текущий момент поддерживаются Office 2010 и Office 2013.
+На текущий момент поддерживаются Office 2010, 2013 и 2016.
 
 Использовать стиль в Office 2007 не получится, так как он содержит ошибку, а точнее, не по стандарту указывает языки источников при формировании библиографии. В результате стиль не может определить, на русском или английском языке написан источник.
 
@@ -14,8 +14,8 @@
 
 Файл стиля (*.xsl) следует поместить в директорию стилей библиографических ссылок:
 
-* Для Office 2010:  [System Volume]:\Program Files\Microsoft Office\Office 14\Bibliography\Style
-* Для Office 2013:  [System Volume]:\Users\\[User Name]\AppData\Roaming\Microsoft\Bibliography\Style
+* Для Office 2010:       [System Volume]:\Program Files\Microsoft Office\Office 14\Bibliography\Style
+* Для Office 2013/2016:  [System Volume]:\Users\\[User Name]\AppData\Roaming\Microsoft\Bibliography\Style
 
 В меню «Ссылки» выбрать стиль «ГОСТ Р 7.0.5-2008 (сортировка по именам)» и работать с источниками. При создании источника следует обязательно указывать язык, иначе по умолчанию им будет английский.
 
