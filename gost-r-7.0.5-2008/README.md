@@ -16,6 +16,7 @@
 
 * Для Office 2010:       [System Volume]:\Program Files\Microsoft Office\Office 14\Bibliography\Style
 * Для Office 2013/2016:  [System Volume]:\Users\\[User Name]\AppData\Roaming\Microsoft\Bibliography\Style
+* Для Office for Mac:    /Applications/Microsoft Word.app/Contents/Resources/Style
 
 В меню «Ссылки» выбрать стиль «ГОСТ Р 7.0.5-2008 (сортировка по именам)» и работать с источниками. При создании источника следует обязательно указывать язык, иначе по умолчанию им будет английский.
 
